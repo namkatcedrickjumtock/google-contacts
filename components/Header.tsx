@@ -5,7 +5,7 @@ import {
   ViewGridIcon,
   ViewListIcon,
 } from "@heroicons/react/outline";
-import Image from "next/image";
+import { IoApps, IoAppsOutline } from "react-icons/io5";
 
 function Header() {
   return (
@@ -44,7 +44,7 @@ function Header() {
             <CogIcon className="h-5 w-5 text-gray-500" />
           </div>
           <div className="flex  items-center space-x-3">
-            <ViewGridIcon className="h-5 w-5 text-gray-500" />
+            <IoAppsOutline className="h-5 w-5 text-gray-500" />
             <img
               className="rounded-full h-10 w-10"
               src={"https:links.papareact.com/gll"}
