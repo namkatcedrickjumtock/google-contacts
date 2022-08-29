@@ -16,7 +16,6 @@ import { BiHistory, BiMessageAltAdd } from "react-icons/bi";
 function SideBar() {
   return (
     <div className="">
-
       {/* compose button */}
       <div className="flex items-center space-x-2 group max-w-fit  shadow-md p-3 rounded-full">
         <img src="/icon/plus.png" alt="" className="w-10 h-8" />
@@ -29,7 +28,7 @@ function SideBar() {
             Icon={IoPersonOutline}
             title={"Contacts"}
             value={315}
-            active
+            selected={true}
           />
           {/* BiDuplicate */}
           <SiderOptions Icon={BiMessageAltAdd} title={"Merge & Fix"} />
