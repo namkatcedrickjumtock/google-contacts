@@ -13,11 +13,12 @@ import {
   IoArchiveOutline,
 } from "react-icons/io5";
 import { BiHistory, BiMessageAltAdd } from "react-icons/bi";
+
 function SideBar() {
   return (
-    <div className="">
+    <div className="w-2/12">
       {/* compose button */}
-      <div className="flex items-center space-x-2 group max-w-fit  shadow-md p-3 rounded-full">
+      <div className="flex items-center space-x-2 group max-w-fit  shadow-md p-3 rounded-full hover:cursor-pointer hover:bg-gray-100">
         <img src="/icon/plus.png" alt="" className="w-10 h-8" />
         <button className="text-sm text-blue-600 pr-3"> create Contact</button>
       </div>
