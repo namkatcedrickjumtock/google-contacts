@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   CogIcon,
   QuestionMarkCircleIcon,
@@ -6,8 +7,16 @@ import {
   ViewListIcon,
 } from "@heroicons/react/outline";
 import { IoApps, IoAppsOutline } from "react-icons/io5";
+import { useSession } from "next-auth/react";
+import { Session } from "next-auth/core/types";
+
+interface user {
+  data: null
+}
 
 function Header() {
+  const { data: session} = useSession()
+
   return (
     <>
       <div className="flex flex-col sticky">
@@ -19,6 +28,7 @@ function Header() {
               <img
                 className="rounded-full object-contain h-10 w-10"
                 src={"/icon/logo.png"}
+                alt=''
               />
               <h2 className="text-gray-500 text-2xl">Contacts</h2>
             </div>
@@ -49,7 +59,8 @@ function Header() {
                 <IoAppsOutline className="h-5 w-5 text-gray-500" />
                 <img
                   className="rounded-full h-10 w-10"
-                  src={"https:links.papareact.com/gll"}
+                  src={session?.user?.image!}
+                  alt=''
                 />
               </div>
             </div>
