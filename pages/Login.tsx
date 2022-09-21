@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { signIn } from "next-auth/react";
 import Head from "next/head";
 import Image from "next/image";
@@ -18,12 +19,12 @@ const Login = () => {
           src={"/icon/logo.png"}
           height={80}
           width={80}
-          objectFit="cover"
+          objectFit="contain"
         />
         <div className="mt-5">
           <button
             onClick={handleLogin}
-            className="text-white bg-blue-700  py-3 px-6 rounded-md text-sm"
+            className="text-white bg-blue-600  py-3 px-9 rounded-md text-sm"
           >
             Login
           </button>
